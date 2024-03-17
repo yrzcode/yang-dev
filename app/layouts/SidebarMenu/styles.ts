@@ -2,7 +2,7 @@
 import * as stylex from '@stylexjs/stylex';
 
 /* Colors */
-import { bgColors } from '@/app/theme/colors.stylex';
+import { bgColors } from '../../theme/colors.stylex';
 
 /* Sidebar menu Styles */
 const styles = stylex.create({

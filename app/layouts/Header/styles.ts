@@ -2,13 +2,13 @@
 import * as stylex from '@stylexjs/stylex';
 
 /* Color */
-import { bgColors } from '@/app/theme/colors.stylex';
+import { bgColors } from '../../theme/colors.stylex';
 
 const styles = stylex.create({
   headerBase: {
     width: '100%',
     height: '100%',
-    backgroundColor: bgColors.headerMainBgColor,
+    backgroundColor: bgColors.headerPrimaryBgColor,
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
@@ -18,9 +18,11 @@ const styles = stylex.create({
     fontWeight: 'bold',
     color: 'white',
     padding: '0px 10px',
+    paddingLeft: '20px',
     background: 'none !important',
   },
   iconArea: {
+    display: 'flex',
     color: 'white',
     padding: '0px 10px',
   },

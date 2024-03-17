@@ -2,21 +2,26 @@
 import { createHeaderStyles } from './styles';
 
 /* UI */
-import { Button } from '@chakra-ui/react';
+import { Box, Button } from '@chakra-ui/react';
 
 /* Parts */
 import { InfoPopover } from './InfoPopover';
+import { Profile } from './Profile';
 
 /* Header */
 export const Header = () => {
   /* CSS */
   const headerStyles = createHeaderStyles();
+
   return (
-    <header {...headerStyles.headerBase}>
-      <Button {...headerStyles.logoButton}>DevDemo</Button>
-      <div {...headerStyles.iconArea}>
-        <InfoPopover />
-      </div>
-    </header>
+    <Box w="100%" h="100%">
+      <header {...headerStyles.headerBase}>
+        <Button {...headerStyles.logoButton}>Dev Demo</Button>
+        <div {...headerStyles.iconArea}>
+          {/* Profile */}
+          <Profile />
+        </div>
+      </header>
+    </Box>
   );
 };

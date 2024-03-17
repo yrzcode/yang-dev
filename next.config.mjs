@@ -8,8 +8,8 @@ const __dirname = path.dirname(__filename);
 const nextConfig = {};
 
 export default stylexPlugin({
-  aliases: {
-    '@/*': [path.join(__dirname, '*')],
-  },
+  // aliases: {
+  //   '@/*': [path.join(__dirname, '*')],
+  // },
   rootDir: __dirname,
 })(nextConfig);

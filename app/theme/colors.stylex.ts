@@ -1,7 +1,8 @@
 import * as stylex from '@stylexjs/stylex';
 
 export const bgColors = stylex.defineVars({
+  primaryBgColor: '#292C33',
   secondaryBgColor: '#22252A',
-  mainBgColor: '#292C33',
-  headerMainBgColor: '#292C33',
+  thirdlyBgColor: '#373d48',
+  headerPrimaryBgColor: '#292C33',
 });

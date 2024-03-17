@@ -11,9 +11,9 @@ module.exports = {
         runtimeInjection: false,
         genConditionalClasses: true,
         treeshakeCompensation: true,
-        aliases: {
-          '@/*': [path.join(__dirname, '*')],
-        },
+        // aliases: {
+        //   '@/*': [path.join(__dirname, '*')],
+        // },
         unstable_moduleResolution: {
           type: 'commonJS',
           rootDir: __dirname,

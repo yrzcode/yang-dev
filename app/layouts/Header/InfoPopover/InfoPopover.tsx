@@ -34,12 +34,12 @@ export const InfoPopover = () => {
     <Popover
       isOpen={isPopoverOpen}
       closeOnBlur
-      placement="bottom"
+      placement="top"
       initialFocusRef={initRef}
     >
       <HStack>
         <PopoverAnchor>
-          <Box position="relative" top="30px" right="130px"></Box>
+          <Box position="relative" bottom="20px" right="130px"></Box>
         </PopoverAnchor>
 
         <PopoverTrigger>

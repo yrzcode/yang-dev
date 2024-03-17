@@ -2,7 +2,7 @@
 import * as stylex from '@stylexjs/stylex';
 
 /* Colors */
-import { bgColors } from '@/app/theme/colors.stylex';
+import { bgColors } from './theme/colors.stylex';
 
 /* Layouts Styles */
 const appLayoutsStyles = stylex.create({
@@ -22,7 +22,7 @@ const homePageStyles = stylex.create({
   base: {
     width: '100%',
     height: '100%',
-    background: bgColors.mainBgColor,
+    background: bgColors.primaryBgColor,
   },
 });
 

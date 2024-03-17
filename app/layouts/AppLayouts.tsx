@@ -8,6 +8,7 @@ import { useDisclosure, Box, Flex, Stack } from '@chakra-ui/react';
 import { Header } from './Header';
 import { DrawerMenu } from './DrawerMenu';
 import { SidebarMenu } from './SidebarMenu';
+import { InfoPopover } from './Header/InfoPopover';
 
 /* App layouts */
 export default function AppLayouts(props: Readonly<{ children: ReactNode }>) {
@@ -17,7 +18,9 @@ export default function AppLayouts(props: Readonly<{ children: ReactNode }>) {
   return (
     <>
       {/* App Drawer Menu */}
-      <DrawerMenu />
+      <Box>
+        <DrawerMenu />
+      </Box>
 
       <Flex direction="column" height="100%">
         {/* App Header */}
@@ -37,6 +40,11 @@ export default function AppLayouts(props: Readonly<{ children: ReactNode }>) {
           </Box>
         </Flex>
       </Flex>
+
+      {/* Information */}
+      <Box position="absolute" bottom={4} right={4}>
+        <InfoPopover />
+      </Box>
     </>
   );
 }
